@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="table">
+        <caption>Таблица 1. Оценки по информатике и математике учеников 7-го класса</caption>
+        <thead>
+            <tr>
+                <th rowspan="3">Ученик</th>
+                <th colspan="6">Период обучения</th>
+            </tr>
+            <tr>
+                <th colspan="2">I четверть</th>
+                <th colspan="2">II четверть</th>
+                <th colspan="2">1-е полугодие</th>
+            </tr>
+            <tr>
+                <th>Информатика</th>
+                <th>Математика</th>
+                <th>Информатика</th>
+                <th>Математика</th>
+                <th>Информатика</th>
+                <th>Математика</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr class="nechet">
+            <td>Иванов Дима</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>Петров Михаил</td>
+            <td>4</td>
+            <td>3</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>5</td>
+        </tr>
+        <tr class="nechet">
+            <td>Голубев Петр</td>
+            <td>5</td>
+            <td>5</td>
+            <td>5</td>
+            <td>4</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>Гордеев Иван</td>
+            <td>4</td>
+            <td>5</td>
+            <td>3</td>
+            <td>5</td>
+            <td>4</td>
+            <td>5</td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td id="itog" colspan="5">Итого (средняя оценка)</td>
+                <td>4</td>
+                <td>4,5</td>
+            </tr>
+        </tfoot>
+    </table>
+    <form method="post">
+        <fieldset class="blok">
+            <legend>Общая информация</legend>
+            <div class="field">
+                Фамилия <br/>
+                <input placeholder="Иванов" required type="text" name="surname"/>
+            </div>
+            <div class="field">
+                Имя <br/>
+                <input placeholder="Иван" required type="text" name="name"/>
+            </div>
+            <div class="field">
+                Отчество <br/>
+                <input placeholder="Иванович" type="text" name="patronymic"/>
+            </div>
+            <div class="field">
+                Дата рождения <br/>
+                <input required type="date" name="birthday"/>
+            </div>
+            <div class="field">
+                Пол <br/>
+                <input type="radio" name="gender"/> - Мужской
+                <input type="radio" name="gender"/> - Женский
+            </div>
+            <div class="field">
+                Фото <br/>
+                <input type="file" name="foto" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Карьера (в порядке убывания)</legend>
+            <div class="field">
+                Место работы 1 <br/>
+                <input type="text" name="job1"/>
+                <div class="field">
+                    Дата начала и дата окончания работы 1 <br/>
+                    <input type="date" name="start1" />
+                    <input type="date" name="finish1" />
+                </div>
+            </div>
+            <div class="field">
+                Место работы 2 <br/>
+                <input type="text" name="job2"/>
+                <div class="field">
+                    Дата начала и дата окончания работы 2 <br/>
+                    <input type="date" name="start2" />
+                    <input type="date" name="finish2" />
+                </div>
+            </div>
+            <div class="field">
+                Место работы 3 <br/>
+                <input type="text" name="job3"/>
+                <div class="field">
+                    Дата начала и дата окончания работы 3 <br/>
+                    <input type="date" name="start3" />
+                    <input type="date" name="finish3" />
+                </div>
+            </div>
+
+        </fieldset>
+                <fieldset id="blok3">
+            <legend>Образование (наименование учреждений)</legend>
+            <div class="field">
+                Высшее <br/>
+                <input type="text" name="university"/>
+            </div>
+            <div class="field">
+                Среднее <br/>
+                <input type="text" name="school"/>
+            </div>
+            <div class="field">
+                Дополнительное <br/>
+                <input type="text" name="university"/>
+            </div>
+            <div class="field">
+                Курсы <br/>
+                <input type="text" name="courses"/>
+            </div>
+        </fieldset>
+        <fieldset class="blok2">
+            <legend>Контактная информация</legend>
+            <div class="field">
+                Телефон <br/>
+                <input placeholder="+375291111111" required type="tel" name="phone" />
+            </div>
+            <div class="field">
+                Электронная почта <br/>
+                <input type="email" name="email" />
+            </div>
+            <div class="field">
+                Адрес проживания <br/>
+                <input type="text" name="address"/>
+            </div>
+            <div class="field">
+                Город проживания <br/>
+                <select name="city">
+                    <option>Минск</option>
+                    <option>Мстиславль</option>
+                    <option>Вишнево</option>
+                    <option>Барановичи</option>
+                    <option>Витебск</option>
+                    <option>Милан</option>
+                    <option>Владивосток</option>
+                    <option>Мурманск</option>
+                </select>
+            </div>
+        </fieldset> 
+        <fieldset>
+            <legend>О себе</legend>
+            <div class="field">
+                <textarea name="info" placeholder="Напишите немного о себе" cols="30" rows="10"></textarea>
+            </div>
+        </fieldset>
+        <button type="reset">Очистить</button>
+        <button class="send">Отправить</button>
+
+    </form>
+</body>
+</html>
